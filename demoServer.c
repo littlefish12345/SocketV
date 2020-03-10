@@ -13,7 +13,7 @@ int main(){
 	SocketV_Close(conn);
 	SocketV_Close(socket);
 
-	WSACleanup();
+	SocketV_clean();
 
 	return 0;
 }

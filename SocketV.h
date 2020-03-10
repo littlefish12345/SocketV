@@ -14,6 +14,10 @@ void SocketV_init () {
 	WSAStartup(MAKEWORD(2, 2), &wsaData);
 }
 
+void SocketV_clean () {
+	WSACleanup();
+}
+
 #define SOCKETV_INET AF_INET
 
 struct SOCKETV{
