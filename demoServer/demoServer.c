@@ -2,7 +2,7 @@
 
 int main(){
 	SocketV_init();
-	struct SOCKETV socket = SocketV(SOCKETV_PRVE, "192.168.15.175", 25575);
+	struct SOCKETV socket = SocketV(SOCKETV_PRVE, "127.0.0.1", 4000);
 	SocketV_listen(socket, 20);
 	struct SOCKETV conn = SocketV_accept(socket);
 	
@@ -16,4 +16,3 @@ int main(){
 
 	return 0;
 }
-
